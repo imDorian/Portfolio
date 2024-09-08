@@ -1,0 +1,16 @@
+---
+import { Image } from "astro:assets";
+---
+
+<section class="flex flex-col justify-center items-center opacity-90 text-xl pt-4 pb-10 gap-2">
+    <h5>Mientras tanto te dejo mi última creación</h5>
+    <a href="https://pomodorotimer-khaki.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <Image loading='eager' class='rounded-xl border-4 border-red-300' src='/pomodoro-timer.png' height="200" width="350" alt='Pomodoro Timer' />
+        <h3 class="text-center text-xl opacity-90 py-1">Pomodoro Timer</h3>
+        <ul class="flex flex-row items-center justify-center gap-3">
+            <li><Image loading='eager' src='/html.svg' height='40' width='40' alt='html' /></li>
+            <li><Image loading='eager' src='/css.svg' height='40' width='40' alt='css' /> </li>
+            <li><Image loading='eager' src='/javascript.svg' height='40' width='40' alt='javascript' /> </li>
+        </ul>
+    </a>
+</section>
