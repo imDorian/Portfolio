@@ -1,19 +1,19 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Badge from '../components/Badge.astro';
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import Presentation from "../components/Presentation.astro";
+import Contact from "../components/Contact.astro";
+import Experience from "../components/Experience.astro";
+import Projects from "../components/Projects.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-	  <section class="w-full lg:w-[740px] mx-auto py-10 flex flex-col items-start">
-	    <h1 class="text-white text-5xl font-bold justify-center flex flex-row gap-x-5 pb-7">
-			Hey, soy Dorian <a href="https://linkedin.com/in/dorians-developer" target="_blank" rel="noopener" class="flex flex-row items-center">
-				<Badge>Disponible para Trabajar</Badge></a></h1>
-		<h2 class="text-xl text-white opacity-80">+2 años de experiencia. Desarrollador Web Full Stack y Deportista. Vivo en Madrid, España 🇪🇸
-			 y nacido en Rumanía 🇷🇴.
-			Especializado en crear aplicaciones web.
-		</h2>
-	  </section>
-	</main>
+<Layout title="Portfolio de Dorian - Desarrollador y Programador Web">
+  <main>
+    <article class="w-full lg:w-[740px] flex justify-start flex-col">
+      <Presentation />
+      <Contact />
+      <Projects />
+      <!-- <Experience /> -->
+    </article>
+  </main>
 </Layout>
-

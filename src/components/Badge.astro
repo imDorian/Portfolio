@@ -1,3 +1,6 @@
-<span class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-blue-300">
-    <slot />
+<span
+  {...Astro.props}
+  class="flex flex-row justify-center items-center bg-neutral-800 text-neutral-300 border-2 border-green-700 text-md font-sm me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300"
+>
+  <slot />
 </span>

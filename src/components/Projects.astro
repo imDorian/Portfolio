@@ -1,16 +1,53 @@
 ---
 import { Image } from "astro:assets";
+import { date } from "astro:schema";
+import ProjectItem from "./ProjectItem.astro";
+import ProgrammingIcon from "../../public/icons/ProgrammingIcon.astro";
+
+const PROJECTS = [
+  {
+    title: "Pomodoro Timer",
+    description: "This is a description of project 1",
+    link: "#",
+    image: "public/pomodoro-timer.png",
+    tecnologies: ["html", "css", "js"],
+  },
+  {
+    title: "Project 2",
+    description: "This is a description of project 2",
+    link: "#",
+    image: "public/pomodoro-timer.png",
+    tecnologies: ["html", "css", "js"],
+  },
+  {
+    title: "Project 3",
+    description: "This is a description of project 3",
+    link: "#",
+    image: "public/pomodoro-timer.png",
+    tecnologies: ["html", "css", "js"],
+  },
+];
 ---
 
-<section class="flex flex-col justify-center items-center opacity-90 text-xl pt-4 pb-10 gap-2">
-    <h5>Mientras tanto te dejo mi última creación</h5>
-    <a href="https://pomodorotimer-khaki.vercel.app/" target="_blank" rel="noopener noreferrer">
-        <Image loading='eager' class='rounded-xl border-4 border-red-300' src='/pomodoro-timer.png' height="200" width="350" alt='Pomodoro Timer' />
-        <h3 class="text-center text-xl opacity-90 py-1">Pomodoro Timer</h3>
-        <ul class="flex flex-row items-center justify-center gap-3">
-            <li><Image loading='eager' src='/html.svg' height='40' width='40' alt='html' /></li>
-            <li><Image loading='eager' src='/css.svg' height='40' width='40' alt='css' /> </li>
-            <li><Image loading='eager' src='/javascript.svg' height='40' width='40' alt='javascript' /> </li>
-        </ul>
-    </a>
+<section
+  id="projects"
+  class="w-full flex flex-col items-start flex-wrap opacity-90 text-xl pt-4 py-10 gap-16 my-10"
+>
+  <h2 class="text-4xl font-semibold pt-16 flex flex-row items-center gap-2">
+    <ProgrammingIcon width="30" height="30" />
+    Proyectos
+  </h2>
+  {
+    PROJECTS.map((project) => {
+      return (
+        <ProjectItem
+          title={project.title}
+          description={project.description}
+          link={project.link}
+          image={project.image}
+          tecnologies={project.tecnologies}
+        />
+      );
+    })
+  }
 </section>

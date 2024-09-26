@@ -1,14 +1,36 @@
----
-import { Image } from "astro:assets";
----
-
-<header class="flex flex-row justify-between items-center py-3 w-[960px] mx-auto">
-    <Image loading='eager' class="rounded-full h-20 w-20 object-cover object-top" width="50" height="50" src="/dorian.JPEG" alt="Dorian" />
-
-    <nav class="flex flex-row gap-x-10 opacity-85">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
-    </nav>
+<header class="w-auto flex justify-center items-center py-4 z-50 sticky top-0">
+  <nav
+    id="navHeader"
+    class="flex items-center justify-between flex-row gap-x-4 text-gray-300 font-medium px-4 py-3 rounded-full transition-colors duration-3000 ease-in-out bg-transparent"
+  >
+    <a
+      class="md:flex-none hover:text-purple-500 hover:ease-in-out duration-300"
+      href="#top">Inicio</a
+    >
+    <a
+      class="hover:text-purple-500 hover:ease-in-out duration-300"
+      href="#projects">Proyectos</a
+    >
+    <a
+      class="hover:text-purple-500 hover:ease-in-out duration-300"
+      href="#about">Sobre mí</a
+    >
+    <a
+      class="hover:text-purple-500 hover:ease-in-out duration-300"
+      href="#contact">Contacto</a
+    >
+  </nav>
 </header>
+<script defer>
+  document.addEventListener("scroll", () => {
+    const nav = document.getElementById("navHeader");
+
+    if (window.scrollY > 0) {
+      nav.classList.add("bg-white");
+      console.log("scrolling");
+    } else {
+      nav.classList.remove("bg-white");
+      console.log("not scrolling");
+    }
+  });
+</script>

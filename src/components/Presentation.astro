@@ -1,0 +1,41 @@
+---
+import { Image } from "astro:assets";
+import Badge from "./Badge.astro";
+import Contact from "./Contact.astro";
+---
+
+<section class="mx-auto py-10 flex flex-col items-start gap-10">
+  <div class="flex flex-row gap-5">
+    <Image
+      loading="eager"
+      src="/dorian.JPEG"
+      height="70"
+      width="70"
+      alt="Dorian"
+      class="rounded-full h-[120px] w-[120px] object-cover object-top opacity-90"
+    />
+    <div class="flex flex-col gap-7 items-start">
+      <h1
+        class="text-white text-5xl font-bold justify-center flex flex-row gap-x-5"
+      >
+        Hola, soy Dorian
+      </h1>
+      <a
+        href="https://linkedin.com/in/dorians-developer"
+        target="_blank"
+        rel="noopener"
+        class="flex flex-row items-center"
+      >
+        <Badge>Disponible para trabajar</Badge>
+      </a>
+    </div>
+  </div>
+  <h2 class="text-2xl text-white opacity-80">
+    +2 años de experiencia.
+    <span class="text-purple-500 font-bold"
+      >Desarrollador Web Full Stack y Deportista.</span
+    >
+    Vivo en Madrid, España 🇪🇸 y nacido en Rumanía 🇷🇴. Especializado en crear aplicaciones
+    web únicas.
+  </h2>
+</section>

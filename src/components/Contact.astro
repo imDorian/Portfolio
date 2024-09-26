@@ -1,0 +1,25 @@
+---
+import LinkedInIcon from "../../public/icons/LinkedInIcon.astro";
+import SocialPill from "../components/SocialPill.astro";
+import MailIcon from "../../public/icons/MailIcon.astro";
+---
+
+<section id="contact" class="flex flex-row gap-5">
+  <a
+    href="http://linkedin.com/in/dorians-developer"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="text-neutral-300"
+  >
+    <SocialPill>
+      <LinkedInIcon class="size-5" />
+      &nbsp; LinkedIn
+    </SocialPill>
+  </a>
+  <a href="mailto:dorians.developer@gmail.com">
+    <SocialPill>
+      <MailIcon class="size-5" />
+      &nbsp; Contáctame
+    </SocialPill>
+  </a>
+</section>

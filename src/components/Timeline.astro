@@ -1,0 +1,33 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+  {
+    date: "Septiembre 2022",
+    title: "Programando varios proyectos",
+    description: "Upgrade Hub",
+    link: "#",
+  },
+  {
+    date: "Febrero 2022",
+    title: "Programando varios proyectos",
+    description: "Upgrade Hub",
+    link: "#",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+  {
+    EXPERIENCE.map((item) => {
+      return (
+        <ExperienceItem
+          title={item.title}
+          description={item.description}
+          date={item.date}
+          link={item.link}
+        />
+      );
+    })
+  }
+</ol>
