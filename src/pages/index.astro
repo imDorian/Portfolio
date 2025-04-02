@@ -5,13 +5,16 @@ import Presentation from "../components/Presentation.astro";
 import Contact from "../components/Contact.astro";
 import Experience from "../components/Experience.astro";
 import Projects from "../components/Projects.astro";
+import { getCollection } from "astro:content";
+
+const projects = await getCollection("projects");
+console.log(projects);
 ---
 
-<Layout title="Portfolio de Dorian - Desarrollador y Programador Web">
+<Layout title="Portfolio de Dorian - Desarrollador Web">
   <main>
     <article class="w-full lg:w-[740px] flex justify-start flex-col">
       <Presentation />
-      <Contact />
       <Projects />
       <!-- <Experience /> -->
     </article>

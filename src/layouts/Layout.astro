@@ -4,7 +4,7 @@ import "@fontsource-variable/onest";
 import InProcess from "../components/InProcess.astro";
 import Projects from "../components/Projects.astro";
 import Footer from "../components/Footer.astro";
-
+import { ClientRouter } from "astro:transitions";
 interface Props {
   title: string;
 }
@@ -14,10 +14,11 @@ interface Props {
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta name="description" content="Portfolio Dorian - Desarrollador Web" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    <ClientRouter />
     <title>Dorian Portfolio</title>
   </head>
   <body
@@ -29,6 +30,7 @@ interface Props {
 			<InProcess />
 			<Projects />
 		</div> -->
+    <!-- <WhatsappBtn /> -->
     <Footer
       >Contactame por &nbsp; <a
         href="http://linkedin.com/in/dorians-developer"
@@ -56,6 +58,7 @@ interface Props {
     background-color: #050505;
     /* width: 100vw; */
     height: 100vh;
+    height: 100dvh;
   }
   @media (prefers-reduced-motion: reduce) {
     html {

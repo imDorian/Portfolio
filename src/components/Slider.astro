@@ -1,0 +1,25 @@
+---
+const { images } = Astro.props;
+console.log(images);
+---
+
+<div
+    class="snap-x snap-mandatory overflow-x-auto flex flex-nowrap rounded-xl gap-x-4"
+>
+    {
+        images.map((image: string) => {
+            return (
+                <div class="snap-center snap-mandatory h-full  flex-shrink-0">
+                    <img
+                        src={image}
+                        alt=""
+                        class="object-cover w-72 h-full rounded-xl"
+                        loading="lazy"
+                        width="100%"
+                        height="100%"
+                    />
+                </div>
+            );
+        })
+    }
+</div>

@@ -2,9 +2,10 @@
 import LinkedInIcon from "../../public/icons/LinkedInIcon.astro";
 import SocialPill from "../components/SocialPill.astro";
 import MailIcon from "../../public/icons/MailIcon.astro";
+import Whatsapp from "../../public/icons/Whatsapp.astro";
 ---
 
-<section id="contact" class="flex flex-row gap-5">
+<section id="contact" class="flex flex-row items-center justify-evenly w-full">
   <a
     href="http://linkedin.com/in/dorians-developer"
     target="_blank"
@@ -12,14 +13,25 @@ import MailIcon from "../../public/icons/MailIcon.astro";
     class="text-neutral-300"
   >
     <SocialPill>
-      <LinkedInIcon class="size-5" />
-      &nbsp; LinkedIn
+      <LinkedInIcon class="size-10 p-2" />
+      <!-- &nbsp; LinkedIn -->
     </SocialPill>
   </a>
   <a href="mailto:dorians.developer@gmail.com">
     <SocialPill>
-      <MailIcon class="size-5" />
-      &nbsp; Contáctame
+      <MailIcon class="size-10 p-2" />
+      <!-- &nbsp; eMail -->
+    </SocialPill>
+  </a>
+  <a
+    href="https://wa.me/34684379534"
+    class=""
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <SocialPill>
+      <Whatsapp class="size-10 p-2" />
+      <!-- &nbsp; Whatsapp -->
     </SocialPill>
   </a>
 </section>
