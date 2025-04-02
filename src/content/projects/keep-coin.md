@@ -2,7 +2,7 @@
 title: 'KeepCoin - Gestiona y comparte gastos'
 description: 'Gestiona tus ingresos y gastos más fácil.'
 image: '/3imgsinborde.jpg'
-images: [/public/iphone-green.jpeg, /public/iphone-green-2.jpeg, /public/add-group.jpeg, /public/home.jpeg]
+images: [/iphone-green.jpeg, /iphone-green-2.jpeg, /add-group.jpeg, /home.jpeg]
 tecnologies: ["html, css, js"]
 link: "https://keep-coin.vercel.app/"
 ---

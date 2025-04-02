@@ -1,8 +1,8 @@
 ---
 title: 'Temporizador Pomodoro Online - Mantén tu foco y organiza tus tareas'
 description: 'Mantén el foco y organiza tus tareas.'
-image: 'public/pomodoroTimer.png'
-images: [/public/pomodoro-home.jpeg, /public/pomodoro-options.jpeg ]
+image: /pomodoroTimer.png'
+images: [/pomodoro-home.jpeg, /pomodoro-options.jpeg ]
 tecnologies: ["html, css, js"]
 link: "https://pomodorotimer-khaki.vercel.app/"
 ---
