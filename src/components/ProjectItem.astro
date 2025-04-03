@@ -3,22 +3,22 @@ const { title, description, link, image, slug } = Astro.props;
 ---
 
 <div
-  class="w-full flex flex-col dark:bg-neutral-800 rounded-3xl border-2 dark:border-neutral-600 shadow md:flex-row hover:shadow-inner sm: flex-row hover:shadow-inner relative group"
+  class="w-full md:h-[250px] flex flex-col dark:bg-neutral-800 rounded-3xl border-2 dark:border-neutral-600 shadow md:flex-row hover:shadow-inner hover:shadow-inner relative group"
 >
-  <div class="overflow-hidden rounded-3xl">
-    <a href=`/projects/${slug}`>
+  <div class="overflow-hidden rounded-3xl md:w-1/2">
+    <a href=`/projects/${slug}` class="">
       <img
         class="rounded-3xl
        object-cover object-centeral
        w-full h-full
-       md:w-[50vw] transition-transform duration-500 ease-in-out transform group-hover:scale-110 group-hover:shadow-inner group-hover:shadow-2xl aspect-[5/3]"
+       transition-transform duration-500 ease-in-out transform group-hover:scale-110 group-hover:shadow-inner group-hover:shadow-2xl"
         src={image}
         alt={title}
       />
     </a>
   </div>
 
-  <div class="p-5">
+  <div class="p-5 md:w-1/2">
     <a href=`/projects/${slug}`>
       <h5
         class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
