@@ -1,6 +1,6 @@
 ---
-title: 'Temporizador Pomodoro Online - Mantén tu foco y organiza tus tareas'
-description: 'Mantén el foco y organiza tus tareas.'
+title: 'Temporizador Pomodoro Online'
+description: 'Mantén tu foco para llevar a cabo tus tareas mas importantes con la técnica Pomodoro.'
 image: '/pomodoroTimer.png'
 images: [/pomodoro-home.jpeg, /pomodoro-options.jpeg ]
 tecnologies: ["html, css, js"]
